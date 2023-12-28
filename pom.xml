@@ -8,24 +8,29 @@
     <version>1.0.0-SNAPSHOT</version>
     <packaging>jar</packaging>
 
+    <name>HelloWorldmaven</name>
+    <url>https://maven.apache.org</url>
+    
+
    
-     <properties>
-           <java.version>1.8</java.version>
-           <maven.compiler.source>1.8</maven.compiler.source>
-           <maven.compiler.target>1.8</maven.compiler.target>
-     </properties>
+    <properties>
+         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+         <maven.compiler.source>1.8</maven.compiler.source>
+         <maven.compiler.target>1.8</maven.compiler.target>
+    </properties>
     <distributionManagement>
     <repository>
-        <id>internal.repo</id>
+         <id>internal.repo</id>
          <name>Internal repo</name>
          <url>file:///var/lib/jenkins/myartifacts/</url>
     </repository>
     </distributionManagement>
+    
     <dependencies>
-           <dependency>
-               <groupId>junit</groupId>
-               <artifactId>junit</artifactId>
-               <version>3.8.1</version>
-           </dependency>
+         <dependency>
+           <groupId>junit</groupId>
+           <artifactId>junit</artifactId>
+           <version>3.8.1</version>
+         </dependency>
     </dependencies>
  </project>
