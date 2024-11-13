@@ -1,4 +1,4 @@
-pipeline { 
+jipipeline { 
     agent any 
     stages {
         stage('Build') { 
@@ -39,7 +39,7 @@ pipeline {
                         sh "mvn deploy"
                 }
 
-            }
+            }ne
         }
     }
 }
